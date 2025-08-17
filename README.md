@@ -1,4 +1,4 @@
-##Recursive Design with Python Turtle
+## Recursive Design with Python Turtle
 
 A collection of recursion sketches built with Python’s turtle module, including fractal-style trees (with leaves and apples) and a tri curve pair that creates a mirrored, rhythmic pattern. This README explains the project, how it works conceptually, and gives step-by-step instructions to run and customise everything.
 
