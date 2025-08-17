@@ -6,8 +6,8 @@ A collection of recursion sketches built with Python’s turtle module, includin
 
 ## Previews
 
-### Fractal Trees
-![Fractal trees preview](https://github.com/amishix/Recursive-designs/recursivedesigns/Trees/recursivetrees.jpg)
+## Fractal Trees
+![Fractal trees preview](https://github.com/amishix/Recursive-designs/blob/main/recursive%20designs/Trees/recursivetrees.jpg)
 
 ### Tri Curve
 ![Tri curve preview](https://github.com/amishix/Webproject/blob/main/images/tri-curve.png)
