@@ -176,4 +176,168 @@ MIT
 
 Built with Python’s `turtle` module and recursion.
 """
+I am an intern in the eFX Strategy team at Nomura.
 
+I have been asked to work on a project involving manual RFQ (Request For Quote) flow analytics and hit-rate analysis.
+
+Please act as:
+1. An eFX strategist
+2. A KDB/q expert
+3. An FX market structure expert
+4. A trading systems architect
+5. A mentor explaining things to a first-year intern
+
+My goal is to understand the entire end-to-end workflow before building analytics.
+
+Context:
+
+The project involves:
+- Trading Engine
+- Onyx
+- KDB/q
+- FIX messages
+- FIXQuoteRequest table
+- FIXQuote table
+- FIXMessage table
+- Execution reports
+- Fills
+- Cancels
+- Rejects
+- Misses
+- Hit Rate analytics
+
+I have been told:
+
+"we need onyx messages sent, and also the execution reports coming into our Trading Engine for bookings / fills / misses etc. This tool is to provide analytics over hit rates."
+
+The workflow I have been shown is roughly:
+
+Client RFQ
+↓
+Trading Engine
+↓
+Auto Quote OR Manual RFQ
+↓
+Onyx
+↓
+FIXQuote
+↓
+Client Action
+↓
+FIXMessage
+↓
+Fill / Cancel / Reject / Miss
+
+Please teach me step-by-step.
+
+I want the answer divided into the following sections:
+
+SECTION 1
+Explain every system involved:
+- Trading Engine
+- Onyx
+- KDB
+- FIX Protocol
+- Solace
+- Risk Server
+- Market Data
+- Trading Venues
+
+SECTION 2
+Explain the lifecycle of a manual RFQ from start to finish.
+
+Use a realistic FX Swap example.
+
+Show:
+- What the client does
+- What the trading engine does
+- When Onyx is triggered
+- What gets stored in KDB
+- What FIX messages are generated
+
+SECTION 3
+Explain the KDB tables:
+
+FIXQuoteRequest
+FIXQuote
+FIXMessage
+
+For each table explain:
+- Purpose
+- Key fields
+- Typical records
+- How tables link together
+
+SECTION 4
+Explain FIX messaging.
+
+Teach me:
+- MsgType
+- ExecType
+
+Create a table showing common values and meanings.
+
+Examples:
+- New Order Single
+- Execution Report
+- Fill
+- Reject
+- Cancel
+- Pending
+
+SECTION 5
+Explain how to identify:
+
+- Fill
+- Reject
+- Cancel
+- Miss
+
+from KDB data.
+
+Show example queries and explain the business logic.
+
+SECTION 6
+Explain hit rate analytics.
+
+Include:
+- Formula
+- Examples
+- Why traders care
+- What management wants to see
+
+SECTION 7
+Based on the information above, propose a complete internship project.
+
+Include:
+
+Business Objective
+Data Sources
+Required Queries
+Metrics
+Dashboard Ideas
+Visualisations
+Final Deliverables
+
+SECTION 8
+Create a 6-week internship roadmap.
+
+For each week include:
+
+Objectives
+Technical Tasks
+Research Tasks
+Meetings to Have
+Questions to Ask Stakeholders
+Expected Deliverables
+
+SECTION 9
+Create a glossary of all terms.
+
+Assume I have no prior knowledge of:
+- FX
+- KDB
+- FIX
+- Electronic Trading
+
+Explain everything in simple language first and then in professional trading terminology.
