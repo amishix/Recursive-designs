@@ -341,3 +341,69 @@ Assume I have no prior knowledge of:
 - Electronic Trading
 
 Explain everything in simple language first and then in professional trading terminology.
+
+
+⸻
+
+Prompt:
+
+I am a KX/q intern working on Deliverable 1: KDB+ Data Exploration & Query Development.
+
+I do NOT want you to simply write the code for me.
+
+I want you to act like a senior KDB+ developer teaching a new intern.
+
+Here is the deliverable:
+
+* There are three tables:
+    * FIXQuoteRequest = inbound RFQ initiation messages
+    * FIXQuote = quote responses / JSON quote history
+    * FIXMessage = full order lifecycle messages
+
+The objective is:
+
+* Discover the schema of all three tables
+* Discover relationships between the tables
+* Discover the join keys
+* Understand the RFQ lifecycle
+* Build four parameterised q functions
+
+The four required capabilities are:
+
+1. Customer RFQ History
+    * Given a customer identifier, date range, and optional currency pair
+    * Return all RFQ sessions from FIXQuoteRequest
+2. Enriched with Quotes
+    * Join RFQ sessions with FIXQuote
+    * Attach bid/ask prices shown to the customer
+3. Trade Outcome Determination
+    * Join with FIXMessage
+    * Determine whether the customer traded
+    * Determine execution price and quantity
+4. Active Customer Discovery
+    * Return distinct customer identifiers that submitted RFQs in a time window
+
+I want you to explain this as if I know finance concepts but am new to KDB+.
+
+For every part:
+
+1. Explain the business meaning
+2. Explain what the table represents in a real RFQ workflow
+3. Explain how the tables likely relate
+4. Explain what keys I should look for
+5. Explain what q queries I should run to discover the schema
+6. Explain why those discovery queries are useful
+7. Explain how a senior quant developer would approach this task
+8. Explain common mistakes interns make
+9. Explain how I should discuss this work with my manager
+10. Explain what insights the final functions provide to a sales trader, eFX trader, or quant
+
+Do not jump straight to code.
+
+Teach me the data model first, then the joins, then the business workflow, then the q implementation.
+
+Assume I am trying to genuinely understand the RFQ lifecycle rather than just complete the assignment.
+
+⸻
+
+That prompt will force the LLM to explain the why behind everything instead of dumping q code at you. For an internship, understanding the RFQ flow and table relationships is much more valuable than memorising the syntax. 
