@@ -407,3 +407,11 @@ Assume I am trying to genuinely understand the RFQ lifecycle rather than just co
 ⸻
 
 That prompt will force the LLM to explain the why behind everything instead of dumping q code at you. For an internship, understanding the RFQ flow and table relationships is much more valuable than memorising the syntax. 
+<img width="4032" height="3024" alt="image" src="https://github.com/user-attachments/assets/17d6a498-a959-4a44-b4f3-fe38748b84fe" />
+Given you’re an eFX Quant Strat intern, I’d focus on becoming strong in these areas over the next few weeks:
+
+1. q syntax and idioms.
+2. KDB table operations (select, update, lj, aj, xkey, grouped queries).
+3. FIX protocol fundamentals and common message types.
+4. The RFQ lifecycle in electronic FX trading.
+5. How the Trading Engine, Onyx, APIs, and KDB fit together.
